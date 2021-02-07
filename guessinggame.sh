@@ -25,7 +25,6 @@ do
         echo Too high
     fi
     echo "Guess again (y/n)?"
-#    read guess_again
     select yn in "No" "Yes"
     do
         case $yn in
