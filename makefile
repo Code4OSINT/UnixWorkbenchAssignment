@@ -5,10 +5,9 @@
 # The number of lines of code contained in guessinggame.sh.
 # The README.md should be produced entirely from the makefile and should not be edited by hand.
 readme.md:
-	echo "Title of the project: " > readme.md
-#	pwd | rev | cut -d "/" -f 1 | rev >> readme.md
-	pwd | grep -o '[^/]*$' # improvement/shorter/readable
-	echo "  \nDate & time: " >> readme.md
+	echo "# Title of the project:  " > readme.md
+	pwd | rev | cut -d "/" -f 1 | rev >> readme.md
+	echo "  \nDate & time:  " >> readme.md
 	date >> readme.md
-	echo "  \nNumber of lines: " >> readme.md
+	echo "  \nNumber of lines:  " >> readme.md
 	cat guessinggame.sh | wc -l >> readme.md
